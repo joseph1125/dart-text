@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:characters/characters.dart';
 
 int getTextLength(String text) {
@@ -5,7 +7,12 @@ int getTextLength(String text) {
 }
 
 String limitText(String text, int count) {
-  return text.characters.take(count).toString();
+  return text.characters.take(max(count, 0)).toString();
 }
 
-String substring(String text, int startIndex, int endIndex) {}
+String substring(String text, int startIndex, int endIndex) {
+  return text.characters
+      .skipLast(max(getTextLength(text) - endIndex, 0))
+      .skip(max(startIndex, 0))
+      .toString();
+}
