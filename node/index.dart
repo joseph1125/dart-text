@@ -4,5 +4,5 @@ import 'package:node_interop/node.dart';
 import 'package:node_interop/util.dart';
 
 void main() {
-  setExport("getTextLength", allowInterop(getTextLength));
+  setExport("length", allowInterop(getTextLength));
 }

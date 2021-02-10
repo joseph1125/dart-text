@@ -1,22 +1,18 @@
-A library for Dart developers.
+# DartText
 
-Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
+a nodejs wrapper of [dart characters library](https://github.com/dart-lang/characters)
+
+## Installation
+
+```
+npm i dart_text
+```
 
 ## Usage
 
-A simple usage example:
+```js
+const dartText = require("dart_text");
 
-```dart
-import 'package:dart_text/dart_text.dart';
-
-main() {
-  var awesome = new Awesome();
-}
+dartText.length("👨‍👨‍👧‍👧");
+// returns 1
 ```
-
-## Features and bugs
-
-Please file feature requests and bugs at the [issue tracker][tracker].
-
-[tracker]: http://example.com/issues/replaceme
