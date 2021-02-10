@@ -4,11 +4,11 @@ declare module "dart_text" {
   export function substring(
     text: string,
     startIndex: number,
-    endIndex: number
+    endIndex?: number
   ): string;
   export function substr(
     text: string,
     startIndex: number,
-    count: number
+    count?: number
   ): string;
 }

@@ -10,16 +10,16 @@ String limit(String text, int count) {
   return text.characters.take(max(count, 0)).toString();
 }
 
-String substring(String text, int startIndex, int endIndex) {
+String substring(String text, int startIndex, [int endIndex]) {
   return text.characters
-      .take(max(endIndex, 0))
+      .take(max(endIndex ?? length(text), 0))
       .skip(max(startIndex, 0))
       .toString();
 }
 
-String substr(String text, int startIndex, int count) {
+String substr(String text, int startIndex, [int count]) {
   return text.characters
       .skip(max(startIndex, 0))
-      .take(max(count, 0))
+      .take(max(count ?? length(text), 0))
       .toString();
 }
