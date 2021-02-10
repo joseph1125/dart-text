@@ -4,3 +4,9 @@ targets:
       - "$package$"
       - "lib/**"
       - "node/**"
+    builders:
+      build_node_compilers|entrypoint:
+        options:
+          compiler: dart2js
+          dart2js_args:
+            - -O4
