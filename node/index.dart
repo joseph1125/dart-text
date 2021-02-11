@@ -4,7 +4,6 @@ import 'package:node_interop/node.dart';
 
 void main() {
   setExport("length", allowInterop(length));
-  setExport("limit", allowInterop(limit));
   setExport("substring", allowInterop(substring));
   setExport("substr", allowInterop(substr));
 }
