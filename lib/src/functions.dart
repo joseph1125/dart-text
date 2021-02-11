@@ -6,10 +6,6 @@ int length(String text) {
   return text.characters.length;
 }
 
-String limit(String text, int count) {
-  return text.characters.take(max(count, 0)).toString();
-}
-
 String substring(String text, int startIndex, [int endIndex]) {
   return text.characters
       .take(max(endIndex ?? length(text), 0))
