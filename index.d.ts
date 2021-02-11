@@ -10,6 +10,6 @@ declare module "dart-text" {
     startIndex: number,
     count?: number
   ): string;
-  export function firstIndexOf(text: string, target: string): string;
-  export function lastIndexOf(text: string, target: string): string;
+  export function firstIndexOf(text: string, target: string): number;
+  export function lastIndexOf(text: string, target: string): number;
 }

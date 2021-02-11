@@ -1,6 +1,6 @@
 {
   "name": "dart-text",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Text manipulation with dart characters algorithm",
   "main": "./build/node/index.dart.js",
   "scripts": {
