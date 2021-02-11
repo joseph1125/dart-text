@@ -6,4 +6,6 @@ void main() {
   setExport("length", allowInterop(length));
   setExport("substring", allowInterop(substring));
   setExport("substr", allowInterop(substr));
+  setExport("firstIndexOf", allowInterop(firstIndexOf));
+  setExport("lastIndexOf", allowInterop(lastIndexOf));
 }

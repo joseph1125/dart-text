@@ -19,3 +19,25 @@ String substr(String text, int startIndex, [int count]) {
       .take(max(count ?? length(text), 0))
       .toString();
 }
+
+int firstIndexOf(String text, String target) {
+  if (text.characters == target.characters) {
+    return 0;
+  }
+  var chunks = text.characters.split(target.characters);
+  if (chunks.length == 1) {
+    return -1;
+  }
+  return chunks.first.length;
+}
+
+int lastIndexOf(String text, String target) {
+  if (text.characters == target.characters) {
+    return 0;
+  }
+  var chunks = text.characters.split(target.characters);
+  if (chunks.length == 1) {
+    return -1;
+  }
+  return text.characters.length - chunks.last.length - target.characters.length;
+}
