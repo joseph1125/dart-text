@@ -16,9 +16,6 @@ const dartText = require("dart-text");
 dartText.length("👨‍👨‍👧‍👧");
 // returns 1
 
-dartText.limit("Hello world", 5);
-// returns "Hello"
-
 dartText.substring("Emojis 👍🏽 are 🍆 poison. 🌮s are bad.", 7, 14);
 // returns "👍🏽 are 🍆"
 
