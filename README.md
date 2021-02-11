@@ -5,13 +5,13 @@ a nodejs wrapper of [dart characters library](https://github.com/dart-lang/chara
 ## Installation
 
 ```
-npm i dart_text
+npm i dart-text
 ```
 
 ## Usage
 
 ```js
-const dartText = require("dart_text");
+const dartText = require("dart-text");
 
 dartText.length("👨‍👨‍👧‍👧");
 // returns 1

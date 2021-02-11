@@ -1,6 +1,6 @@
 {
-  "name": "dart_text",
-  "version": "1.1.2",
+  "name": "dart-text",
+  "version": "1.0.0",
   "description": "Text manipulation with dart characters algorithm",
   "main": "./build/node/index.dart.js",
   "scripts": {
@@ -18,7 +18,8 @@
     "url": "https://github.com/joseph1125/dart_text/issues"
   },
   "files": [
-    "build/node/*"
+    "build/node/*",
+    "index.d.ts"
   ],
   "homepage": "https://github.com/joseph1125/dart_text#readme"
 }
