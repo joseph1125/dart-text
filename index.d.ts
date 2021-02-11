@@ -1,6 +1,5 @@
 declare module "dart-text" {
   export function length(text: string): number;
-  export function limit(text: string, count: number): string;
   export function substring(
     text: string,
     startIndex: number,
