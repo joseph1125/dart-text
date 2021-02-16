@@ -1,10 +1,10 @@
 {
   "name": "dart-text",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Text manipulation with dart characters algorithm",
   "main": "./build/node/index.dart.js",
   "scripts": {
-    "build": "pub run build_runner build --output=build",
+    "build": "pub run build_runner build --output=build && node patch.js",
     "deploy": "npm run build && npm publish"
   },
   "repository": {
