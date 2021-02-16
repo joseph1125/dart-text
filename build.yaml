@@ -10,3 +10,4 @@ targets:
           compiler: dart2js
           dart2js_args:
             - -O4
+            - --csp
