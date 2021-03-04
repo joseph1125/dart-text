@@ -7,7 +7,10 @@ int length(String text) {
 }
 
 String substring(String text, int startIndex, [int endIndex]) {
-  return text.characters.getRange(startIndex, endIndex).toString();
+  return text.characters
+      .take(max(endIndex ?? length(text), 0))
+      .skip(max(startIndex, 0))
+      .toString();
 }
 
 String substr(String text, int startIndex, [int count]) {
