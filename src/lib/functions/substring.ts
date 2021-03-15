@@ -27,7 +27,7 @@ function skip(text: string, count: number): string {
   if (count < 0) {
     throw new Error('count should be > 0');
   }
-  let start = skipIndices(text, count, 0);
+  const start = skipIndices(text, count, 0);
   if (start === text.length) {
     return '';
   }
@@ -38,7 +38,7 @@ function take(text: string, count: number): string {
   if (count < 0) {
     throw new Error('count should be > 0');
   }
-  let end = skipIndices(text, count, 0);
+  const end = skipIndices(text, count, 0);
   if (end === text.length) {
     return text;
   }
