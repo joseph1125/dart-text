@@ -11,14 +11,21 @@ import {
 
 test('Length of text', (t) => {
   t.is(length('👨‍👨‍👧‍👧'), 1);
+  t.is(length(''), 0);
+  t.is(length('abc'), 3);
 });
 
 test('substring', (t) => {
+  t.is(substring("", 1, 3), "");
   t.is(substring('Emojis 👍🏽 are 🍆 poison. 🌮s are bad.', 7, 14), '👍🏽 are 🍆');
+  t.is(substring('Emojis 👍🏽 are 🍆 poison. 🌮s are bad.', 7, 7), '');
+  t.throws(() => substring('Emojis 👍🏽 are 🍆 poison. 🌮s are bad.', -1), {message: 'start should be >= 0'});
+  t.throws(() => substring('Emojis 👍🏽 are 🍆 poison. 🌮s are bad.', 7, 5), {message: 'end should be >= start'});
 });
 
 test('substr', (t) => {
   t.is(substr('Emojis 👍🏽 are 🍆 poison. 🌮s are bad.', 7, 1), '👍🏽');
+  t.is(substr('Emojis 👍🏽 are 🍆 poison. 🌮s are bad.', 7), '👍🏽 are 🍆 poison. 🌮s are bad.');
 });
 
 test('first index of', (t) => {

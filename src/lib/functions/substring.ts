@@ -47,7 +47,7 @@ function take(text: string, count: number): string {
 
 export function substring(text: string, start: number, excludingEnd?: number) {
   if (start < 0) {
-    throw new Error('start should be > 0');
+    throw new Error('start should be >= 0');
   }
   if (excludingEnd === undefined || excludingEnd === null) {
     return skip(text, start);
