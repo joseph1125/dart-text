@@ -24,10 +24,7 @@ function skipIndices(
 }
 
 function skip(text: string, count: number): string {
-  if (count < 0) {
-    throw new Error('count should be > 0');
-  }
-  let start = skipIndices(text, count, 0);
+  const start = skipIndices(text, count, 0);
   if (start === text.length) {
     return '';
   }
@@ -38,7 +35,7 @@ function take(text: string, count: number): string {
   if (count < 0) {
     throw new Error('count should be > 0');
   }
-  let end = skipIndices(text, count, 0);
+  const end = skipIndices(text, count, 0);
   if (end === text.length) {
     return text;
   }
@@ -47,7 +44,7 @@ function take(text: string, count: number): string {
 
 export function substring(text: string, start: number, excludingEnd?: number) {
   if (start < 0) {
-    throw new Error('start should be > 0');
+    throw new Error('start should be >= 0');
   }
   if (excludingEnd === undefined || excludingEnd === null) {
     return skip(text, start);
