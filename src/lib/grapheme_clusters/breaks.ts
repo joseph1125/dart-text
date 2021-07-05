@@ -18,10 +18,6 @@ export class Breaks {
     this.state = state;
   }
 
-  public clone(base: string, cursor: number, end: number, state: number) {
-    return new Breaks(base, cursor, end, state);
-  }
-
   // The index of the next grapheme cluster break in last-to-first index order.
   //
   // Returns a negative number if there are no further breaks,

@@ -24,9 +24,6 @@ function skipIndices(
 }
 
 function skip(text: string, count: number): string {
-  if (count < 0) {
-    throw new Error('count should be > 0');
-  }
   const start = skipIndices(text, count, 0);
   if (start === text.length) {
     return '';

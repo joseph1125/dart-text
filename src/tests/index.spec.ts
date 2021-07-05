@@ -17,6 +17,7 @@ test('Length of text', (t) => {
 
 test('substring', (t) => {
   t.is(substring("", 1, 3), "");
+  t.is(substring("", 0, 0), "");
   t.is(substring('Emojis 👍🏽 are 🍆 poison. 🌮s are bad.', 7, 14), '👍🏽 are 🍆');
   t.is(substring('Emojis 👍🏽 are 🍆 poison. 🌮s are bad.', 7, 7), '');
   t.throws(() => substring('Emojis 👍🏽 are 🍆 poison. 🌮s are bad.', -1), {message: 'start should be >= 0'});
@@ -30,10 +31,14 @@ test('substr', (t) => {
 
 test('first index of', (t) => {
   t.is(firstIndexOf('Emojis 👍🏽 are 🍆 poison. 🌮s are bad.', '👍🏽'), 7);
+  t.is(firstIndexOf('a', 'a'), 0);
+  t.is(firstIndexOf('a%a', 'b'), -1);
 });
 
 test('last index of', (t) => {
   t.is(lastIndexOf('Emojis 👍🏽 are 🍆 poison. 🌮s are bad.', 'are'), 26);
+  t.is(lastIndexOf('a', 'a'), 0);
+  t.is(lastIndexOf('a%a', 'b'), -1);
 });
 
 test('split', (t) => {
