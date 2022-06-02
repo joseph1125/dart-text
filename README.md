@@ -2,6 +2,8 @@
 
 a native JS implementation of functions of [dart characters library](https://github.com/dart-lang/characters)
 
+Tested with support of Emoji V14 Spec
+
 ## Installation
 
 ```
