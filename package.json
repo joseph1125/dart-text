@@ -102,5 +102,8 @@
     "exclude": [
       "**/*.spec.js"
     ]
+  },
+  "resolutions": {
+    "minimist": "^1.2.6"
   }
 }
