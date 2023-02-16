@@ -1,6 +1,6 @@
 {
   "name": "dart-text",
-  "version": "2.1.4",
+  "version": "2.2.0",
   "description": "Characters manipulation using Dart's algorithm",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
@@ -26,7 +26,6 @@
     "cov:lcov": "nyc report --reporter=lcov",
     "cov:send": "run-s cov:lcov && codecov",
     "cov:check": "nyc report && nyc check-coverage --lines 100 --functions 100 --branches 100",
-    "version": "standard-version",
     "deploy": "yarn build && npm publish"
   },
   "engines": {
