@@ -27,7 +27,6 @@
     "cov:send": "run-s cov:lcov && codecov",
     "cov:check": "nyc report && nyc check-coverage --lines 100 --functions 100 --branches 100",
     "version": "standard-version",
-    "prepare-release": "run-s reset-hard test cov:check version",
     "deploy": "yarn build && npm publish"
   },
   "engines": {
